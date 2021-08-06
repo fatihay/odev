@@ -1,11 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   line-height: 1.4;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  /* background-color: red; */
 }
 
 .product {
@@ -32,7 +43,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
-  /*  position absolute dityince buna gerek kalmıyor..display: inline-block; */
+  /*  position absolute diyince buna gerek kalmıyor..display: inline-block; */
   left: -25px;
   top: -15px;
 }
@@ -43,11 +54,31 @@ body {
   text-transform: uppercase;
   color: #777;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .fiyat {
   font-size: 24px;
   letter-spacing: 1px;
+  float: left;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
 }
 
 .more-info:link,
@@ -86,10 +117,15 @@ body {
   background-color: #885214;
 }
 
+.product-details {
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+}
+
 .details-title {
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 30px;
   margin-bottom: 15px;
 }
 .details-list {
