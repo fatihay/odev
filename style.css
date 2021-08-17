@@ -17,6 +17,7 @@ body {
 
 .container {
   /* background-color: red; */
+  display: flex;
 }
 
 .product {
@@ -54,26 +55,31 @@ body {
   text-transform: uppercase;
   color: #777;
   margin-bottom: 20px;
-  float: right;
+  /* float: right; */
   margin-top: 8px;
 }
 
 .product-img {
-  float: left;
+  /* float: left; */
   margin-right: 40px;
 }
 
 .product-info {
   width: 243px;
-  float: left;
+  /* float: left; */
   margin-right: 40px;
   margin-top: 20px;
+}
+
+.ara {
+  display: flex;
+  justify-content: space-between;
 }
 
 .fiyat {
   font-size: 24px;
   letter-spacing: 1px;
-  float: left;
+  /* float: left; */
 }
 
 .product-description {
@@ -100,6 +106,9 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
+.colors {
+  display: flex;
+}
 
 .color-blue {
   background-color: #2f6ee2;
@@ -119,7 +128,7 @@ body {
 
 .product-details {
   width: 243px;
-  float: left;
+  /* float: left; */
   margin-top: 20px;
 }
 
